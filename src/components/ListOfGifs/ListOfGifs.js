@@ -5,10 +5,10 @@ export default function ListOfGifs({gifs}) {
    
 
 return <>
-  <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 m-12 gap-3">
+  <div className="columns-2 md:columns-3 xl:columns-4">
   {
     gifs.map(({id,title,url}) => 
-    <Gif 
+    <Gif
     id ={id} 
     key={id} 
     title={title}  
